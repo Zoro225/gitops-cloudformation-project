@@ -1,0 +1,53 @@
+{
+    "RouteTables": [
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0a45f0003bbab3506",
+                    "RouteTableId": "rtb-0321fc8ea8c13737b",
+                    "SubnetId": "subnet-0cbdd57fca3dbe262",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0321fc8ea8c13737b",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.0.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "GatewayId": "igw-0c38b5b153f2bf5a0",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:798256686739:stack/gitops-infrastructure-stack/2f986b40-89b5-11f1-bc56-0edeb095da63"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "gitops-public-route-table"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "PublicRouteTable"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "gitops-infrastructure-stack"
+                }
+            ],
+            "VpcId": "vpc-044c00983507a7b64",
+            "OwnerId": "798256686739"
+        }
+    ]
+}

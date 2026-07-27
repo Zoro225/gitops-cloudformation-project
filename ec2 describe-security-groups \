@@ -1,0 +1,67 @@
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-079a97812afa41525",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-east-1:798256686739:stack/gitops-infrastructure-stack/2f986b40-89b5-11f1-bc56-0edeb095da63"
+                },
+                {
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "WebSecurityGroup"
+                },
+                {
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "gitops-infrastructure-stack"
+                }
+            ],
+            "VpcId": "vpc-044c00983507a7b64",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:798256686739:security-group/sg-079a97812afa41525",
+            "OwnerId": "798256686739",
+            "GroupName": "gitops-infrastructure-stack-WebSecurityGroup-vjqTRbAiRBV6",
+            "Description": "Allow SSH and HTTP",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 80,
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}
